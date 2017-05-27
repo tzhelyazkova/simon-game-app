@@ -1,0 +1,17 @@
+<script src="https://unpkg.com/vue"></script>
+<div id="simonGame" class="container-fluid">
+<h1>Simon Game</h1>
+    <h2>Score: {{ score }}</h2>
+    <div id="navigation">
+        <button id="btnStart" v-on:click="startGame" type="button" class="btn-round nav-item"><img src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/play-128.png"/></button>
+        <button id="btnReset" v-on:click="resetGame" type="button" class="btn-round nav-item"><img src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/spin-128.png"/></button>
+    </div>
+    <div id="gameRow1" class="flex-container">
+        <button class="flex-item" v-bind:class="classGreen" v-on:click="userMove('green')" ref="btnGreen"></button>
+        <button class="flex-item" v-bind:class="classRed" v-on:click="userMove('red')" ref="btnRed"></button>
+    </div>
+    <div id="gameRow2" class="flex-container">
+        <button class="flex-item" v-bind:class="classYellow" v-on:click="userMove('yellow')" ref="btnYellow"></button>
+        <button class="flex-item" v-bind:class="classBlue" v-on:click="userMove('blue')" ref="btnBlue"></button>
+    </div>
+</div>

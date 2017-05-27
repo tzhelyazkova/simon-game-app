@@ -1,0 +1,109 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+  margin-left: 20px;
+  font-weight: 2em;
+}
+body {
+  background-color: #fff5ee;
+}
+.flex-container {
+  padding: auto;
+  margin: auto;
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-container .flex-item {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#gameRow1 .flex-item:first-child {
+   background-color: green;
+}
+
+#gameRow1 .flex-item:nth-child(2) {
+   background-color: red;
+}
+
+#gameRow2 .flex-item:first-child {
+   background-color: yellow;
+}
+
+#gameRow2 .flex-item:nth-child(2) {
+  background-color: blue;
+}
+
+.active-green {
+  background-color: lightgreen !important;
+}
+
+.active-blue {
+  background-color: lightblue !important;
+}
+
+.active-red {
+  background-color: tomato !important;
+}
+
+.active-yellow {
+  background-color: lightyellow !important;
+}
+
+#btnStart, #btnReset {
+  background-color: pink;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.btn-round {
+    display:block;
+    width: 100px;
+    height:100px;
+    line-height:100px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    background: pink;
+    /*box-shadow: 0 0 3px gray;*/
+    font-size:20px;
+    font-weight:bold;
+}
+.btn-round:hover {
+    background: #495858;
+}
+
+#navigation {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+#navigation .nav-item {
+    margin: 20px;
+}
+img {
+  display: block;
+  margin: auto;
+  max-height: 50px;
+  max-width: 50px;
+  justify-content: center;
+}
+#btnStart img {
+  padding-left: 10px;
+}
